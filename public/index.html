@@ -13,7 +13,7 @@
   <body class="text-gray-600 font-body">
     <div class="grid md:grid-cols-10">
       <!--content wrapper -->
-      <div class="md:col-span-1 md:flex md:justify-end">
+      <div class="md:col-span-2 md:flex md:justify-end">
         <nav class="text-right">
           <div class="flex justify-between items-center">
             <h1 class="font-bold uppercase p-4 border-b border-gray-100">
@@ -114,7 +114,7 @@
         </nav>
       </div>
       <!-- end nav -->
-      <main class="px-16 py-6 bg-gray-100 md:col-span-9">
+      <main class="px-16 py-6 bg-gray-100 md:col-span-8">
         <div class="flex justify-center md:justify-end">
           <a
             href=""
@@ -127,12 +127,22 @@
             >Sign up</a
           >
         </div>
-        <header>
-          <div>
-            <h2 class="text-gray-700 text-6xl font-semibold">Mes Recettes</h2>
+        <header class="grid lg:grid-cols-4 mt-10">
+          <div class="col-span-1">
+            <h2 class="text-gray-700 text-6xl font-semibold leading-none">
+              Mes Recettes
+            </h2>
             <h3 class="text-2xl font-semibold">Pour les gourmands</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita,
+              nihil, eveniet iste modi corrupti earum praesentium id
+              consequuntur voluptatibus neque ex sint totam illo minus et
+              aspernatur maxime sit facere!
+            </p>
           </div>
-          <div class="swiper-container hidden md:block">
+          <div
+            class="swiper-container hidden lg:block max-w-screen-sm rounded-lg shadow-md col-span-3 overflow-hidden"
+          >
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <img src="./img/pic1.jpg" alt="" />

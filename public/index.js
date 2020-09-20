@@ -20,13 +20,8 @@ const MenuBurger = () => {
 MenuBurger();
 
 //random pictures home page
-const sliderHome = () => {
-  const pictures = ['./img/pic1.jpg', './img/pic2.jpg', './img/pic3.jpg'];
-  const max = pictures.length;
-  function getRandomInt(max) {
-    const random = Math.floor(Math.random() * Math.floor(max));
-    document.getElementById('sliderHome').src = pictures[random];
-  }
-  getRandomInt(max);
-};
-sliderHome();
+function sliderHome(max) {
+  const random = Math.floor(Math.random() * Math.floor(max));
+  document.getElementById('sliderHome').src = `./img/pic${random}.jpg`;
+}
+sliderHome(8);

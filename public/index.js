@@ -19,17 +19,14 @@ const MenuBurger = () => {
 };
 MenuBurger();
 
-//function for the slider Swiper
-let swiper = new Swiper('.swiper-container', {
-  autoplay: {
-    delay: 5000,
-  },
-  effect: 'fade',
-  slidesPerView: 'auto',
-  centeredSlides: true,
-  spaceBetween: 30,
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-});
+//random pictures home page
+const sliderHome = () => {
+  const pictures = ['./img/pic1.jpg', './img/pic2.jpg', './img/pic3.jpg'];
+  const max = pictures.length;
+  function getRandomInt(max) {
+    const random = Math.floor(Math.random() * Math.floor(max));
+    document.getElementById('sliderHome').src = pictures[random];
+  }
+  getRandomInt(max);
+};
+sliderHome();

@@ -4,10 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mes recettes</title>
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body class="text-gray-600 font-body">
@@ -16,9 +12,10 @@
       <div class="md:col-span-2 md:flex md:justify-end">
         <nav class="text-right">
           <div class="flex justify-between items-center">
-            <h1 class="font-bold uppercase p-4 border-b border-gray-100">
-              <a href="" class="hover:text-gray-700">Mes recettes</a>
-            </h1>
+            <img src="./img/logo.png" alt="" class="w-16 lg:w-32 md:w-32" />
+            <!-- <h1 class="font-bold uppercase p-4 border-b border-gray-100">
+              <a href="" class="hover:text-gray-700 text-2xl">Mes recettes</a>
+            </h1> -->
             <div class="px-4 cursor-pointer md:hidden" id="burger">
               <svg
                 class="w-6"
@@ -51,14 +48,14 @@
             </div>
           </div>
           <ul class="text-sm mt-6 hidden md:block" id="menu">
-            <li class="text-gray-700 font-bold py-1">
+            <li class="text-gray-700 text-2xl font-bold py-1">
               <a
                 href=""
                 class="px-4 flex justify-end items-center border-r-4 border-primary"
               >
                 <span>Home</span>
                 <svg
-                  class="w-5 ml-2"
+                  class="w-6 ml-2"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
                   fill="currentColor"
@@ -69,14 +66,14 @@
                 </svg>
               </a>
             </li>
-            <li class="py-1">
+            <li class="py-1 text-2xl">
               <a
                 href=""
                 class="px-4 flex justify-end items-center border-r-4 border-white"
               >
                 <span>About</span>
                 <svg
-                  class="w-5 ml-2"
+                  class="w-6 ml-2"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
                   fill="currentColor"
@@ -89,14 +86,14 @@
                 </svg>
               </a>
             </li>
-            <li class="py-1">
+            <li class="py-1 text-2xl">
               <a
                 href=""
                 class="px-4 flex justify-end items-center border-r-4 border-white"
               >
                 <span>Contact</span>
                 <svg
-                  class="w-5 ml-2"
+                  class="w-6 ml-2"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
                   fill="currentColor"
@@ -127,8 +124,8 @@
             >Sign up</a
           >
         </div>
-        <header class="grid lg:grid-cols-4 mt-10">
-          <div class="col-span-1">
+        <header class="grid lg:grid-cols-8 lg:gap-10 mt-10">
+          <div class="col-span-3">
             <h2 class="text-gray-700 text-6xl font-semibold leading-none">
               Mes Recettes
             </h2>
@@ -140,25 +137,8 @@
               aspernatur maxime sit facere!
             </p>
           </div>
-          <div
-            class="swiper-container hidden lg:block max-w-screen-sm rounded-lg shadow-md col-span-3 overflow-hidden"
-          >
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="./img/pic1.jpg" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img src="./img/pic2.jpg" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img src="./img/pic3.jpg" alt="" />
-              </div>
-            </div>
-            <!-- Add Pagination -->
-            <div class="swiper-pagination"></div>
-            <!-- Add Arrows -->
-            <!-- <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div> -->
+          <div class="hidden lg:block max-w-full col-span-5">
+            <img id="sliderHome" src="" alt="" class="rounded-lg shadow-md" />
           </div>
         </header>
 
@@ -496,8 +476,6 @@
         </footer>
       </main>
     </div>
-
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./index.js"></script>
   </body>
 </html>

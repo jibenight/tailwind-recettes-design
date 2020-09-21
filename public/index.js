@@ -1,5 +1,5 @@
 // toggle menu responsive
-const MenuBurger = () => {
+(() => {
   const burger = document.querySelector('#burger');
   const burgerOn = document.querySelector('#burger-on');
   const burgerClose = document.querySelector('#burger-close');
@@ -16,12 +16,10 @@ const MenuBurger = () => {
       burgerClose.classList.add('hidden');
     }
   });
-};
-MenuBurger();
+})();
 
 //random pictures home page
-function sliderHome(max) {
+(max => {
   const random = Math.floor(Math.random() * Math.floor(max));
   document.getElementById('sliderHome').src = `./img/pic${random}.jpg`;
-}
-sliderHome(8);
+})(8);
